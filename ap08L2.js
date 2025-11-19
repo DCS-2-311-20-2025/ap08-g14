@@ -73,10 +73,10 @@ export function init(scene, size, id, offset, texture) {
             geometry,
             material
         )
-        bldg.position.set(offset.x + 20, 0, offset.z - 10);
+        bldg.position.set(offset.x + x, bldgH / 2, offset.z + z);
         scene.add(bldg);
     }
-    makeBuilding(20, 20, 0);
+    makeBuilding(10, -20, 1);
     makeBuilding(-10, 10, 2);
     // コース(描画)
     course = new THREE.CatmullRomCurve3(
