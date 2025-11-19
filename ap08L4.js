@@ -19,6 +19,8 @@ let course;
 export const origin = new THREE.Vector3();
 export const controlPoints = [
     [-50, 20],
+    [-25,0],
+    [0,-10],
     [ 25,-40]
 ]
 export function init(scene, size, id, offset, texture) {
