@@ -112,7 +112,7 @@ export function init(scene, size, id, offset, texture) {
 // コース(自動運転用)
 export function makeCourse(scene) {
     const courseVectors = [];
-    const parts = [L1, L2, L3, L4,];
+    const parts = [L1, L2, L3, L4];
     parts.forEach((part) => {
         part.controlPoints.forEach((p) => {
             courseVectors.push(
@@ -151,7 +151,7 @@ export function resize() {
 
 // 描画処理
 const clock = new THREE.Clock();
-const carPosition = new THREE.Vector3();
+const carPosition = new THREE.Vector3(); 
 const carTarget = new THREE.Vector3();
 export function render(scene, car) {
     const time = (clock.getElapsedTime() / 20);
