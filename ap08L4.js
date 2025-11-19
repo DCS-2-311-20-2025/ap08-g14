@@ -19,6 +19,7 @@ let course;
 export const origin = new THREE.Vector3();
 export const controlPoints = [
     [-50, 20],
+    [-45,15],
     [-25,0],
     [0,-10],
     [ 25,-40]
